@@ -1,0 +1,147 @@
+﻿
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:minWidth="25px"
+android:minHeight="25px"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/scrollView1">
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+android:orientation="horizontal"
+android:minWidth="25px"
+android:minHeight="25px"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/linearLayout1"
+android:gravity="center">
+<TextView
+android:text="registration page"
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/textView1"/>
+</LinearLayout>
+    <LinearLayout
+ android:orientation="horizontal"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:id="@+id/linearLayout2">
+<TextView
+ android:text="User Name："
+ android:textAppearance="?android:attr/textAppearanceLarge"
+ android:layout_width="wrap_content"
+ android:layout_height="match_parent"
+ android:id="@+id/textUser" />
+<EditText
+ android:inputType="date"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:id="@+id/editText1" />
+</LinearLayout>
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/linearLayout3">
+<TextView
+android:text="Password："
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/textView3" />
+<EditText
+android:inputType="date"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/editText2" />
+</LinearLayout>
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/linearLayout4">
+ <TextView
+android:text="FirstName："
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/textView4" />
+<EditText
+android:inputType="date"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/editText3" />
+</LinearLayout>
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/linearLayout5">
+ <TextView
+android:text="LastName："
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/textView5" />
+<EditText
+android:inputType="date"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/editText4" />
+</LinearLayout>
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/linearLayout6">
+ <TextView
+android:text="ContactNumber："
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/textView6" />
+<EditText
+android:inputType="date"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/editText5" />
+</LinearLayout>
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/linearLayout7">
+ <TextView
+android:text="Address："
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/textView7" />
+<EditText
+android:inputType="date"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/editText6" />
+</LinearLayout>
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/linearLayout8"
+ android:gravity="center">
+<Button
+ android:text="Return"
+ android:layout_width="wrap_content"
+ android:layout_height="match_parent"
+ android:id="@+id/button2" />
+<Button
+android:text="Register"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/button3" />
+ </LinearLayout>
+ </LinearLayout>
+</ScrollView>
