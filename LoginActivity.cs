@@ -30,10 +30,12 @@ namespace XamarinApp
 
             EdUserName = FindViewById<EditText>(Resource.Id.EdUserName);
             EdPassword = FindViewById<EditText>(Resource.Id.EdPassword);
+        }
             private void BtnLogin_Click(object sender, EventArgs e)
             {
                 EditText Username = FindViewById<EditText>(Resource.Id.EdUserName);
                 EditText Password = FindViewById<EditText>(Resource.Id.EdPassword);
+            //preset password is for test
                 string User = "Y";
                 string Pw = "123";
 
@@ -52,6 +54,6 @@ namespace XamarinApp
                 Intent RegisterAct = new Intent(this, typeof(RegisterActivity));
                 StartActivity(RegisterAct);
             }
-        }
+        
     }
 }
