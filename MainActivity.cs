@@ -83,7 +83,7 @@ namespace XamarinApp
                     Console.WriteLine($"current Loc - Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
                     MarkerOptions curLoc = new MarkerOptions();
                     curLoc.SetPosition(new LatLng(location.Latitude, location.Longitude));
-                    curLoc.SetTitle("You are here");
+                    curLoc.SetTitle("I am here");
                     curLoc.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueAzure));
 
                     googleMap.AddMarker(curLoc);
@@ -122,6 +122,44 @@ namespace XamarinApp
             catch (Exception ex)
             {
                 getLastLocation(googleMap);
+            }
+        }
+        public async void getLastLocation(GoogleMap googleMap)
+        {
+            Console.WriteLine("Test - LastLoc");
+            try
+            {
+                var location = await Geolocation.GetLastKnownLocationAsync();
+                if (location != null)
+                {
+                    Console.WriteLine($"Last Loc - Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
+                    MarkerOptions curLoc = new MarkerOptions();
+                    curLoc.SetPosition(new LatLng(location.Latitude, location.Longitude));
+                    curLoc.SetTitle("The location is not updated yet");
+                    curLoc.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueAzure));
+
+                    googleMap.AddMarker(curLoc);
+                }
+            }
+            catch (FeatureNotSupportedException fnsEx)
+            {
+                // Handle not supported on device exception
+                Toast.MakeText(this, "Feature Not Supported", ToastLength.Short);
+            }
+            catch (FeatureNotEnabledException fneEx)
+            {
+                // Handle not enabled on device exception
+                Toast.MakeText(this, "Feature Not Enabled", ToastLength.Short);
+            }
+            catch (PermissionException pEx)
+            {
+                // Handle permission exception
+                Toast.MakeText(this, "Needs more permission", ToastLength.Short);
+            }
+            catch (Exception ex)
+            {
+                // Unable to get location
+                Toast.MakeText(this, "Unable to get location", ToastLength.Short);
             }
         }
     }
