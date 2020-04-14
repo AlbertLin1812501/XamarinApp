@@ -29,7 +29,23 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="7dp" />
     <TextView
+        android:id="@+id/sellarinfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Seller: Vincent\nE-mail: 31benjsnfj@gmail.com\nContactNumber: 4152165452"/>
+    <Button
+        android:id="@+id/ShareSMS"
+        android:text="Share"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+       
+    <Button
+        android:id="@+id/Location"
+        android:text="location"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+   
 </LinearLayout>
