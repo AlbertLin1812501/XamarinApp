@@ -70,6 +70,7 @@
     <Compile Include="RegisterActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -111,6 +112,9 @@
   <ItemGroup>
     <PackageReference Include="GooglePlayServices.Basement">
       <Version>1.0.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
       <Version>28.0.0.3</Version>
