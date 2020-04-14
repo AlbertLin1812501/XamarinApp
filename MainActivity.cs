@@ -9,7 +9,7 @@ using Android.Widget;
 
 namespace XamarinApp
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar")]
     public class MainActivity : AppCompatActivity
     {
 
@@ -18,6 +18,8 @@ namespace XamarinApp
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
+
+            
 
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
@@ -55,6 +57,7 @@ namespace XamarinApp
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-	}
+        
+    }
 }
 
