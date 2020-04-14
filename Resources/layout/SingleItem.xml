@@ -8,7 +8,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#333333"
-                android:text="ASUS ROG Swift PG65UQ 65 4K UHD"
+                android:text="ASUS ROG Swift PG65UQ 65 4K UHD\nPrice:$999"
                 
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="4dp" />
@@ -28,4 +28,8 @@
                 
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="7dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seller: Vincent\nE-mail: 31benjsnfj@gmail.com\nContactNumber: 4152165452"/>
 </LinearLayout>
