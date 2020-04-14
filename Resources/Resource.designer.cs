@@ -230,9 +230,8 @@ namespace XamarinApp
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
 			
-			private Style()
-			{
-			}
+
+
 		}
 	}
 }
