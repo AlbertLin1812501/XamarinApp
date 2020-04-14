@@ -4,8 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-        android:text="This is XXX" 
-    />
+        android:id="@+id/ItemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#333333"
+                android:text="ASUS ROG Swift PG65UQ 65 4K UHD"
+        
+                
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp" />
+    <TextView
+        android:id="@+id/Properties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_bright"
+        android:text="        Screen Size: 65 inches\n
+        Screen Resolution: 3840x2160\n
+        Refresh Rate: 144hz\n
+        Response Time: 4 ms\n
+        Aspect Ratio: 16:9\n
+        Sync Type: Nvidia G-Sync\n
+        Panel Type: VA\n
+        VESA Size: 200 x 200"/>
+
 </LinearLayout>
