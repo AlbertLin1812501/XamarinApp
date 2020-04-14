@@ -1,14 +1,146 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+﻿<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:minWidth="25px"
+android:minHeight="25px"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/scrollView1">
+  <LinearLayout
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+    <LinearLayout
+    android:orientation="horizontal"
+    android:minWidth="25px"
+    android:minHeight="25px"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
- <TextView
-        android:id="@+id/randomtext"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:text="Welcome"/>
- 
-
-</RelativeLayout>
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout1"
+    android:gravity="center">
+      <TextView
+      android:text="registration page"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:id="@+id/RegiLabel"/>
+    </LinearLayout>
+    <LinearLayout
+ android:orientation="horizontal"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:id="@+id/linearLayout2">
+      <TextView
+       android:text="Username："
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:id="@+id/UserNameLabel" />
+      <EditText
+       android:inputType="text"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/UserNameRegi" />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout3">
+      <TextView
+      android:text="Password："
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:id="@+id/PasswordLabel" />
+      <EditText
+      android:inputType="text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/PassWordRegi" />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout4">
+      <TextView
+     android:text="First Name："
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:id="@+id/FirstNameLabel" />
+      <EditText
+      android:inputType="text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/FirstNameRegi" />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout5">
+      <TextView
+     android:text="Last Name："
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:id="@+id/LastNameLabel" />
+      <EditText
+      android:inputType="text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/LastNameRegi" />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout6">
+      <TextView
+     android:text="ContactNumber："
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:id="@+id/ContactNumberLabel" />
+      <EditText
+      android:inputType="text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/ContactNumRegi" />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout7">
+      <TextView
+     android:text="Address："
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:id="@+id/AddressLabel" />
+      <EditText
+      android:inputType="text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/AddressRegi" />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout8"
+     android:gravity="center">
+      <Button
+       android:text="Return"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:id="@+id/BackBtn" />
+      <Button
+      android:text="Register"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:id="@+id/RegisterBtn" />
+    </LinearLayout>
+  </LinearLayout>
+</ScrollView>
