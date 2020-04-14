@@ -21,7 +21,7 @@ namespace XamarinApp
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.Registerpage);
+            SetContentView(Resource.Layout.RegisterPage);
             Button Back = FindViewById<Button>(Resource.Id.BackBtn);
 
 

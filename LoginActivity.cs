@@ -51,7 +51,7 @@ namespace XamarinApp
 
             public void btnRegister_Click(Object sender, EventArgs e)
             {
-                Intent RegisterAct = new Intent(this, typeof(RegisterActivity));
+                Intent RegisterAct = new Intent(this, typeof(RegisterPage));
                 StartActivity(RegisterAct);
             }
         
