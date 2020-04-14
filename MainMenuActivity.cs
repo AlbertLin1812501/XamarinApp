@@ -41,7 +41,7 @@ namespace XamarinApp
         private void MAdapter_ItemClick(object sender, int e)
         {
             int photoNum = e + 1;
-            Toast.MakeText(this, "Item Clicked " + photoNum, ToastLength.Short).Show();
+            Toast.MakeText(this, "This is a Mouse " + photoNum, ToastLength.Short).Show();
             Intent ItemView = new Intent(this, typeof(ItemViewActivity));
             StartActivity(ItemView);
         }

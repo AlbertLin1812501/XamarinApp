@@ -20,10 +20,6 @@ namespace XamarinApp
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.SingleItem);
             
-
-
         }
-        
-
     }
 }
