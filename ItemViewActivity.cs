@@ -60,7 +60,7 @@ namespace XamarinApp
         }
         private void OnLocation_Click(object sender, EventArgs e)
         {
-            Intent Location = new Intent(this, typeof(MainActivity));
+            Intent Location = new Intent(this, typeof(Map));
             StartActivity(Location);
         }
     }
