@@ -22,6 +22,8 @@ namespace XamarinApp
             SetContentView(Resource.Layout.SingleItem);
             Button Share = FindViewById<Button>(Resource.Id.ShareSMS);
             Share.Click += OnSmSShare_Click;
+            Button Map = FindViewById<Button>(Resource.Id.Location);
+            Map.Click += OnLocation_Click;
 
         }
         public async Task ShareText(string text)
@@ -53,6 +55,13 @@ namespace XamarinApp
             {
                 // Other error has occurred.
             }
+
+            
+        }
+        private void OnLocation_Click(object sender, EventArgs e)
+        {
+            Intent Location = new Intent(this, typeof(MainActivity));
+            StartActivity(Location);
         }
     }
 }
