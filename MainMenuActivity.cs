@@ -45,5 +45,7 @@ namespace XamarinApp
             Intent ItemView = new Intent(this, typeof(ItemViewActivity));
             StartActivity(ItemView);
         }
+
+
     }
 }
