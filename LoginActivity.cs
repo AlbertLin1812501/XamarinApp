@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 
 using Android.App;
@@ -9,6 +11,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Newtonsoft.Json;
 
 namespace XamarinApp
 {
@@ -19,6 +22,7 @@ namespace XamarinApp
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.LoginPage);
+            ServicePointManager.ServerCertificateValidationCallback += (o, certificate, chain, errors) => true;
 
             Button btnLogin = FindViewById<Button>(Resource.Id.btnLogin);
             btnLogin.Click += BtnLogin_Click;
@@ -31,29 +35,29 @@ namespace XamarinApp
             EdUserName = FindViewById<EditText>(Resource.Id.EdUserName);
             EdPassword = FindViewById<EditText>(Resource.Id.EdPassword);
         }
-            private void BtnLogin_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
+        {
+
+            EditText Username = FindViewById<EditText>(Resource.Id.EdUserName);
+            EditText Password = FindViewById<EditText>(Resource.Id.EdPassword);
+            string User = "Y";
+            string Pw = "123";
+
+            if (Username.Text == User && Password.Text == Pw)
             {
-                EditText Username = FindViewById<EditText>(Resource.Id.EdUserName);
-                EditText Password = FindViewById<EditText>(Resource.Id.EdPassword);
-            //preset password is for test
-                string User = "Y";
-                string Pw = "123";
 
-                if (Username.Text == User && Password.Text == Pw)
-                {
-
-                    Intent MenuAct = new Intent(this, typeof(MainMenuActivity));
-                    StartActivity(MenuAct);
-                }
+                Intent MenuAct = new Intent(this, typeof(MainMenuActivity));
+                StartActivity(MenuAct);
             }
+        }
 
 
 
-            public void btnRegister_Click(Object sender, EventArgs e)
-            {
-                Intent RegisterAct = new Intent(this, typeof(RegisterActivity));
-                StartActivity(RegisterAct);
-            }
-        
+        public void btnRegister_Click(Object sender, EventArgs e)
+        {
+            Intent RegisterAct = new Intent(this, typeof(RegisterPage));
+            StartActivity(RegisterAct);
+        }
+
     }
 }
